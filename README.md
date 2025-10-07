@@ -20,3 +20,15 @@ Coloca a fonte ROBOTO dentro de ./public/index.html logo abaixo da
 tag <Tiltle>EPLAY - A sua loja de games</Tiltle>
 
 Criaremos a documento de estilo global ./src/styles.ts
+
+
+
+# Construa o cabeçalho
+
+Cria uma pasta assets src/assets e coloque o logo.svg
+
+Cria uma pasta components e Header também um documentos index para o pasta
+que também é um componente. src/components/Header/index.tsx
+
+Cria a estrutura do index.tsx do Header, importamos para o App.tsx onde o
+componente será usado. Cria-se também styles.ts para o componente Header.
