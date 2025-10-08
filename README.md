@@ -32,3 +32,12 @@ que também é um componente. src/components/Header/index.tsx
 
 Cria a estrutura do index.tsx do Header, importamos para o App.tsx onde o
 componente será usado. Cria-se também styles.ts para o componente Header.
+
+
+
+# Crie o banner
+
+Colocar a imagem 'banner-homem-aranha.png' em assets/images. Criamos um componente
+Banner. Criamos uma pasta components/Banner, com dois documentos index.tsx e styles.ts.
+
+Colocar o componente Banner no App.tsx logo abaixo do componente Header.

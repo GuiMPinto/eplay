@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 // Cosntantes para a paleta de cores.
 export const cores = {
@@ -18,14 +18,15 @@ export const GlobalCss = createGlobalStyle`
   }
 
   body {
-  background-color: ${cores.preta};
-  color: ${cores.branca};
-  padding-top: 40px;
-}
-`
+    background-color: ${cores.preta};
+    color: ${cores.branca};
+    padding-top: 40px;
+  }
 
-export const Container = styled.div`
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 `
