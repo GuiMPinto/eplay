@@ -41,3 +41,9 @@ Colocar a imagem 'banner-homem-aranha.png' em assets/images. Criamos um componen
 Banner. Criamos uma pasta components/Banner, com dois documentos index.tsx e styles.ts.
 
 Colocar o componente Banner no App.tsx logo abaixo do componente Header.
+
+
+# Componentize - Parte I
+
+Criamos um botão verde que será reaproveitado em vários componentes. Chamaremos de este
+componente de tag. Criamos uma pasta components/Tag, com dois documentos index.tsx e styles.ts.
