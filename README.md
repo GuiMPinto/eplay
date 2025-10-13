@@ -47,3 +47,12 @@ Colocar o componente Banner no App.tsx logo abaixo do componente Header.
 
 Criamos um botão verde que será reaproveitado em vários componentes. Chamaremos de este
 componente de tag. Criamos uma pasta components/Tag, com dois documentos index.tsx e styles.ts.
+
+
+# Componentize - Parte II
+
+Criaremos os carts dos produtos. Criaremos o componente Product; uma pasta components/Product,
+com dois documentos index.tsx e styles.ts.
+
+Criaremos os carts para a lista de produtos. Criaremos o componente ProductList; uma pasta
+components/ProductList, com dois documentos index.tsx e styles.ts.
