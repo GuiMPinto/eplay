@@ -79,3 +79,9 @@ da lista de produtos. Sendo assim o componente ProductList usará esta classe pa
 
 Criamos um documento 'src/routes.tsx' onde colocamos as rotas, que são os caminhos de uma página a
 outra através da interação do usuário.
+
+
+# Construa o rodapé
+
+Criaremos o componente rodapé. Uma pasta ropade components/Footer/index.tsx e components/Footer/styles.ts
+

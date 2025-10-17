@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom'
 const Header = () => (
   <HeaderBar>
     <div>
-      <img src={logo} alt="EPLAY"></img>
+      <Link to="./">
+        <img src={logo} alt="Eplay"></img>
+      </Link>
       <nav>
         <Links>
           <LinkItem>
