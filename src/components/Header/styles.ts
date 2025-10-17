@@ -22,7 +22,7 @@ export const HeaderBar = styled.header`
   }
 `
 
-export const Link = styled.ul`
+export const Links = styled.ul`
   display: flex;
   margin-left: 40px;
 `
