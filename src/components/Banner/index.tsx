@@ -1,19 +1,16 @@
-import { Imagem, Titulo, Precos } from './styles' //.container
-import bannerImg from '../../assets/images/banner-homem-aranha.png'
-import Tag from '../Tag'
-import Button from '../Button'
+import { Imagem, Logo, Texto } from './styles' //.container
+
+import bannerImg from '../../assets/images/bannerHome.png'
+import logo from '../../assets/images/logo.png'
 
 const Banner = () => (
   <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
-    <div className="container">
-      <Tag size="big">Destaque do dia</Tag>
-      <div>
-        <Titulo>Marvel&aposs Spider-Man: Miles Morales PS4 & PS5 </Titulo>
-        <Precos>
-          <span>De R$ 250,00</span> <br />
-          por apenas R$ 99,90
-        </Precos>
-      </div>
+    <Logo src={logo} alt="E Food" />
+    <Texto>
+      {' '}
+      Viva experiências gastronômicas <br /> no conforto da sua casa
+    </Texto>
+    {/* <div className="container">
       <Button
         type="link"
         to="/produto"
@@ -21,7 +18,7 @@ const Banner = () => (
       >
         Aproveitar
       </Button>
-    </div>
+    </div> */}
   </Imagem>
 )
 

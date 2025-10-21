@@ -3,10 +3,12 @@ import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
-  background-color: ${cores.cinza};
-  border-radius: 8px;
+  background-color: tranparent;
+  weight: 472px;
   padding: 8px;
   position: relative;
+  margin-bottom: 32px;
+  margin-right: 40px;
 
   ${TagContainer} {
     margin-right: 8px;

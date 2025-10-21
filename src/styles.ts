@@ -2,11 +2,13 @@ import { createGlobalStyle } from 'styled-components'
 
 // Cosntantes para a paleta de cores.
 export const cores = {
-  branca: '#eee',
+  branca: '#fff8f2',
   preta: '#111',
   cinza: '#333',
   cinzaClaro: '#a3a3a3',
-  verde: '#10AC84'
+  verde: '#10AC84',
+  rosa: '#e66767',
+  rosaClaro: '#ffebd9'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -19,9 +21,8 @@ export const GlobalCss = createGlobalStyle`
   }
 
   body {
-    background-color: ${cores.preta};
+    background-color: ${cores.branca};
     color: ${cores.branca};
-    padding-top: 40px;
   }
 
   .container {

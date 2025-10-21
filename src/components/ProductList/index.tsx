@@ -5,7 +5,7 @@ import { Container, List, Titulo } from './styles'
 
 export type Props = {
   tituloLista: string
-  background: 'gray' | 'black'
+  background: 'branco' | 'rosa'
   games: Game[]
 }
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { TagContainer } from '../Tag/styles'
+import { cores } from '../../styles'
 /*
 São combinados o CSS destes elementos para que a tag verde com a frase ' Destaque do dia '
 dentro do banner(compoente 'Imagem') fique no canto superior deste.
@@ -17,15 +18,16 @@ dentro do banner(compoente 'Imagem') fique no canto superior deste.
 */
 export const Imagem = styled.div`
   width: 100%;
-  height: 560px;
   display: block;
+  height: 386px;
   background-repeat: no-repeat;
   background-size: cover;
+
   font-weight: bold;
 
   .container {
     position: relative;
-    padding-top: 340px;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -36,6 +38,19 @@ export const Imagem = styled.div`
     top: 32px;
   }
 `
+export const Logo = styled.img`
+  display: block;
+  padding-top: 40px;
+  margin: 0 auto;
+`
+export const Texto = styled.p`
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 160px;
+  color: ${cores.rosa};
+`
+
 export const Titulo = styled.div`
   font-size: 36px;
   max-width: 450px;

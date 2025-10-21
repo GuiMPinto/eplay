@@ -3,10 +3,9 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const HeaderBar = styled.header`
-  background-color: ${cores.cinza};
+  background-color: ${cores.rosa};
+  background-height: 300px;
   padding: 24px;
-  border-radius: 16px;
-  margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +23,6 @@ export const HeaderBar = styled.header`
 
 export const Links = styled.ul`
   display: flex;
-  margin-left: 40px;
 `
 
 export const LinkItem = styled.li`
