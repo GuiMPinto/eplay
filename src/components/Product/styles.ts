@@ -1,36 +1,79 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
+import { PropsProduto } from './index'
 
-export const Card = styled.div`
-  background-color: tranparent;
-  weight: 472px;
-  padding: 8px;
+export const Card = styled.div<
+  Omit<
+    PropsProduto,
+    'nomeJogo' | 'sistema' | 'descricao' | 'infos' | 'imagem' | 'nota'
+  >
+>`
+  background-color: ${(props) =>
+    props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
+  color: ${(props) =>
+    props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
+  width: 472px;
+  height: 400px;
   position: relative;
   margin-bottom: 32px;
   margin-right: 40px;
+  border: 2px solid;
 
   ${TagContainer} {
-    margin-right: 8px;
+    background-color: ${(props) =>
+      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    color: ${(props) =>
+      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
+    margin-left: 8px;
   }
+
+  img {
+    width: 100%;
+  }
+`
+
+export const Nota = styled.div`
+  img {
+    height: 16px;
+    width: 16px;
+  }
+
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+`
+export const TagItem = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 
 export const Titulo = styled.h3`
   font-weight: bold;
   font-size: 16px;
   display: block;
-  margin-top: 16px;
+  margin-top: 8px;
   margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 `
 export const Descricao = styled.p`
   font-size: 14px;
   line-height: 22px;
   display: block;
-  margin-top: 16px;
+  margin-top: 8px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
 `
 
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+  padding-left: 8px;
+`
+export const Saibamais = styled.div`
+  position: absolute;
+  bottom: 8px;
 `

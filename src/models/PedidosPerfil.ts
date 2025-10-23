@@ -1,10 +1,8 @@
-class Game {
+class PedidoPerfil {
   descricao: string
   imagem: string
-  infos: string[]
   sistema: string
   nomeJogo: string
-  nota: string
   backgroundPedido: 'branca' | 'rosa'
   id: number
 
@@ -12,21 +10,17 @@ class Game {
     id: number,
     descricao: string,
     imagem: string,
-    infos: string[],
     sistema: string,
-    nota: string,
     backgroundPedido: 'branca' | 'rosa',
     nomeJogo: string
   ) {
     this.id = id
     this.descricao = descricao
     this.imagem = imagem
-    this.infos = infos
     this.sistema = sistema
     this.nomeJogo = nomeJogo
-    this.nota = nota
     this.backgroundPedido = backgroundPedido
   }
 }
 
-export default Game
+export default PedidoPerfil

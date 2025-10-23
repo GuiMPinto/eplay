@@ -11,13 +11,7 @@ const Banner = () => (
       Viva experiências gastronômicas <br /> no conforto da sua casa
     </Texto>
     {/* <div className="container">
-      <Button
-        type="link"
-        to="/produto"
-        title="Clique aqui para aproveitar esta oferta"
-      >
-        Aproveitar
-      </Button>
+
     </div> */}
   </Imagem>
 )

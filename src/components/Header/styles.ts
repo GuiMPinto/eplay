@@ -5,10 +5,13 @@ import { cores } from '../../styles'
 export const HeaderBar = styled.header`
   background-color: ${cores.rosa};
   background-height: 300px;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  .container {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   a {
     color: ${cores.branca};

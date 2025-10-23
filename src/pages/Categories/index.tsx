@@ -1,82 +1,73 @@
-import ProductsList from '../../components/ProductList'
-import Game from '../../models/Game'
+import PedidosPerfil from '../../models/PedidosPerfil'
+import pizza from '../../assets/images/pizza.jpg'
+import ListaPerfil from '../../components/PagePerfil/ListaPerfil'
+import BannerPerfil from '../../components/PagePerfil/BannerPernil'
+import Folder from '../../components/PagePerfil/Folder'
 
-import resident from '../../assets/images/sushi.png'
-import sushi from '../../assets/images/sushi.png'
-
-const promocoes: Game[] = [
+const menuperfil: PedidosPerfil[] = [
   {
     id: 1,
-    categoria: 'Horror',
     descricao:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: sushi
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   },
   {
     id: 2,
-    categoria: 'Horror',
     descricao:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom.',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: sushi
+
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   },
   {
     id: 3,
-    categoria: 'Horror',
     descricao:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom.',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: sushi
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   },
   {
     id: 4,
-    categoria: 'Horror',
     descricao:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom.',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: sushi
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   },
-
   {
     id: 5,
-    categoria: 'Horror',
     descricao:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom.',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: resident
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   },
   {
     id: 6,
-    categoria: 'Horror',
     descricao:
-      'Resident Evil 4, conhecido no Japão como Biohazard 4, é um jogo eletrônico de survival horror de tiro em terceira pessoa desenvolvido e publicado pela Capcom.',
-    nomeJogo: 'Resident Evil 4',
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
-    infos: ['10%', 'R$ 250,00'],
-    imagem: resident
+    imagem: pizza,
+    backgroundPedido: 'rosa'
   }
 ]
 
 const Categories = () => (
   <>
-    <ProductsList games={promocoes} tituloLista="RPG" background="branco" />
+    <BannerPerfil />
+    <Folder />
+    <ListaPerfil perfil={menuperfil} tituloLista="Perfil" background="branca" />
     {/* <ProductsList games={emBreve} tituloLista="Ação" background="rosa" /> */}
-    <ProductsList
-      games={promocoes}
-      tituloLista="Aventura"
-      background="branco"
-    />
   </>
 )
 

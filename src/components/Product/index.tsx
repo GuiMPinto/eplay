@@ -1,24 +1,36 @@
 import Tag from '../Tag'
-import { Card, Descricao, Titulo, Infos } from './styles'
+import estrela from '../../assets/images/estrela.png'
 
-type PropsProduto = {
+import {
+  Card,
+  Descricao,
+  Titulo,
+  Infos,
+  Saibamais,
+  TagItem,
+  Nota
+} from './styles'
+
+export type PropsProduto = {
   nomeJogo: string
-  categoria: string
   sistema: string
   descricao: string
   infos: string[]
   imagem: string
+  nota: string
+  backgroundCart: 'branca' | 'rosa'
 }
 
 const Product = ({
   nomeJogo,
-  categoria,
   sistema,
   descricao,
   infos,
-  imagem
+  imagem,
+  nota,
+  backgroundCart
 }: PropsProduto) => (
-  <Card>
+  <Card backgroundCart={backgroundCart}>
     <img src={imagem} alt={nomeJogo} />
     <Infos>
       {infos.map((info) => (
@@ -26,10 +38,16 @@ const Product = ({
       ))}
     </Infos>
 
-    <Titulo>{nomeJogo}</Titulo>
-    <Tag>{categoria}</Tag>
-    <Tag>{sistema}</Tag>
+    <TagItem>
+      <Titulo>{nomeJogo}</Titulo>
+      <Nota>
+        <Titulo>{nota}</Titulo>
+        <img src={estrela} />
+      </Nota>
+    </TagItem>
+
     <Descricao>{descricao}</Descricao>
+    <Saibamais>{<Tag key={sistema}>{sistema}</Tag>}</Saibamais>
   </Card>
 )
 
