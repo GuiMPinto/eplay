@@ -77,7 +77,7 @@ const promocoes: Game[] = [
 const Home = () => (
   <>
     <Banner />
-    <ProductsList games={promocoes} tituloLista="Home" background="branca" />
+    <ProductsList games={promocoes} tituloLista=" " background="branca" />
   </>
 )
 
