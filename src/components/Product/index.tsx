@@ -1,5 +1,6 @@
 import Tag from '../Tag'
 import estrela from '../../assets/images/estrela.png'
+import Button from '../Button'
 
 import {
   Card,
@@ -47,7 +48,13 @@ const Product = ({
     </TagItem>
 
     <Descricao>{descricao}</Descricao>
-    <Saibamais>{<Tag key={sistema}>{sistema}</Tag>}</Saibamais>
+    <Button
+      type="link"
+      to="/listaPerfil"
+      title="Clique para adicionar ao carrinho"
+    >
+      Saiba Mais
+    </Button>
   </Card>
 )
 

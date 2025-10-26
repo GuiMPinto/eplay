@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 import { PropsProduto } from './index'
+import { ButtonContainer, ButtonLink } from '../../components/Button/styles'
 
 export const Card = styled.div<
   Omit<
@@ -14,7 +15,7 @@ export const Card = styled.div<
   color: ${(props) =>
     props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
   width: 472px;
-  height: 400px;
+  height: 408px;
   position: relative;
   margin-bottom: 32px;
   margin-right: 40px;
@@ -26,6 +27,26 @@ export const Card = styled.div<
     color: ${(props) =>
       props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
     margin-left: 8px;
+  }
+
+  ${ButtonContainer} {
+    background-color: ${(props) =>
+      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    color: ${(props) =>
+      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
+    margin-left: 8px;
+    position: absolute;
+    bottom: 8px;
+  }
+
+  ${ButtonLink} {
+    background-color: ${(props) =>
+      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    color: ${(props) =>
+      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
+    margin-left: 8px;
+    position: absolute;
+    bottom: 8px;
   }
 
   img {
