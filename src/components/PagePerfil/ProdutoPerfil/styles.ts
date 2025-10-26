@@ -8,9 +8,9 @@ export const Card = styled.div<
   Omit<PropsProduto, 'nomeJogo' | 'descricao' | 'infos' | 'imagem'>
 >`
   background-color: ${(props) =>
-    props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
+    props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
   color: ${(props) =>
-    props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
   width: 320px;
   height: 396px;
   position: relative;
