@@ -12,7 +12,7 @@ const menuperfil: PedidosPerfil[] = [
     nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const menuperfil: PedidosPerfil[] = [
     sistema: 'Windowns',
 
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const menuperfil: PedidosPerfil[] = [
     nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const menuperfil: PedidosPerfil[] = [
     nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const menuperfil: PedidosPerfil[] = [
     nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const menuperfil: PedidosPerfil[] = [
     nomeJogo: 'Pizza Marguerita',
     sistema: 'Windowns',
     imagem: pizza,
-    backgroundPedido: 'rosa'
+    backgroundPedido: 'branca'
   }
 ]
 

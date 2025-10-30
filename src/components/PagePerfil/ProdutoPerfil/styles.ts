@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { cores } from '../../../styles'
-import { TagContainer } from '../../Tag/styles'
 import { PropsProduto } from './index'
 import { ButtonContainer, ButtonLink } from '../../Button/styles'
 
@@ -8,11 +7,11 @@ export const Card = styled.div<
   Omit<PropsProduto, 'nomeJogo' | 'descricao' | 'infos' | 'imagem'>
 >`
   background-color: ${(props) =>
-    props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
+    props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
   color: ${(props) =>
-    props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
+    props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
   width: 320px;
-  height: 396px;
+  height: 368px;
   position: relative;
   margin-bottom: 32px;
   margin-right: 40px;
@@ -24,9 +23,9 @@ export const Card = styled.div<
     width: 100%;
     text-align: center;
     background-color: ${(props) =>
-      props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
+      props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
     color: ${(props) =>
-      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
+      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
   }
 
   ${ButtonLink} {
@@ -35,16 +34,9 @@ export const Card = styled.div<
     width: 100%;
     text-align: center;
     background-color: ${(props) =>
-      props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
+      props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
     color: ${(props) =>
-      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
-  }
-  ${TagContainer} {
-    background-color: ${(props) =>
       props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
-    color: ${(props) =>
-      props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
-    margin-left: 8px;
   }
 
   img {
