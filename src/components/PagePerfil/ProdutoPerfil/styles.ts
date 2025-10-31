@@ -6,12 +6,10 @@ import { ButtonContainer, ButtonLink } from '../../Button/styles'
 export const Card = styled.div<
   Omit<PropsProduto, 'nomeJogo' | 'descricao' | 'infos' | 'imagem'>
 >`
-  background-color: ${(props) =>
-    props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
-  color: ${(props) =>
-    props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
+  background-color: ${cores.rosa};
+  color: ${cores.branca};
   width: 320px;
-  height: 368px;
+  height: 376px;
   position: relative;
   margin-bottom: 32px;
   margin-right: 40px;
@@ -22,10 +20,8 @@ export const Card = styled.div<
     bottom: 4px;
     width: 100%;
     text-align: center;
-    background-color: ${(props) =>
-      props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
-    color: ${(props) =>
-      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    background-color: ${cores.branca};
+    color: ${cores.rosa};
   }
 
   ${ButtonLink} {
@@ -33,12 +29,9 @@ export const Card = styled.div<
     bottom: 4px;
     width: 100%;
     text-align: center;
-    background-color: ${(props) =>
-      props.backgroundCart === 'branca' ? cores.branca : cores.rosa};
-    color: ${(props) =>
-      props.backgroundCart === 'branca' ? cores.rosa : cores.branca};
+    background-color: ${cores.branca};
+    color: ${cores.rosa};
   }
-
   img {
     width: 100%;
   }
@@ -66,15 +59,4 @@ export const Infos = styled.div`
   top: 16px;
   right: 16px;
   padding-left: 8px;
-`
-export const Adicionar = styled.div<
-  Omit<PropsProduto, 'nomeJogo' | 'descricao' | 'infos' | 'imagem'>
->`
-  position: absolute;
-  bottom: 8px;
-  width: 95%;
-  background-color: ${(props) =>
-    props.backgroundCart === 'rosa' ? cores.rosa : cores.branca};
-  color: ${(props) =>
-    props.backgroundCart === 'rosa' ? cores.branca : cores.rosa};
 `

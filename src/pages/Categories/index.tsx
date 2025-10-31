@@ -66,7 +66,7 @@ const Categories = () => (
   <>
     <BannerPerfil />
     <Folder />
-    <ListaPerfil perfil={menuperfil} tituloLista="" background="branca" />
+    <ListaPerfil perfil={menuperfil} tituloLista="" background="rosa" />
     {/* <ProductsList games={emBreve} tituloLista="Ação" background="rosa" /> */}
   </>
 )
